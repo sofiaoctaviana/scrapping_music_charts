@@ -8,7 +8,7 @@ on:
 
 jobs:
   music-scrape:
-    runs-on: macos-latest
+    runs-on: macOs-latest
     env:
       ATLAS_URL: ${{ secrets.ATLAS_URL }}
       ATLAS_COLLECTION: ${{ secrets.ATLAS_COLLECTION }}
