@@ -25,4 +25,4 @@ jobs:
           install.packages("mongolite")
         shell: Rscript {0}
       - name: Scrape Music Charts Data
-        run: Rscript scrapping_music_charts.R
+        run: Rscript music_scrapping.R
