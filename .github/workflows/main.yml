@@ -2,7 +2,7 @@ name: Daily Scraping Music Charts
 
 on:
   schedule:
-    - cron: '*/7 * * * *'  # every 7 minutes
+    - cron: '0 1 * * *'
     workflow_dispatch:
 
 
