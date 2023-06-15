@@ -7,10 +7,19 @@ message('Scrapping Data')
 url <- "https://www.billboard.com/charts/hot-100"  
 hot100 <- read_html(url) 
 rows <- hot100 %>% html_elements(".chart-results-list .o-chart-results-list-row")
+rank_1 = rows %>% html_attr("data-detail-target") %>% as.numeric()
+title_1 = rows %>% html_elements(".c-title") %>% html_text(trim = T)
+
+artist_1 = rows %>% html_elements(".c-label") %>% html_text(trim = T)
+
+artist_2 <-artist_1[seq(2,length(artist_1),8)]
+artist_2
+
 
 music_rank <- tibble(
-  rank = rows %>% html_attr("data-detail-target") %>% as.numeric(),
-  title = rows %>% html_elements(".c-title") %>% html_text(trim = T)
+  rank = rank_1[1:10],
+  title = title_1[1:10],
+  artist = artist_2[1:10]
 )
 #music_rank
 
