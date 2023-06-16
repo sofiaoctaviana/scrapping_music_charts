@@ -20,6 +20,9 @@ Berikut tampilan salah satu dokumen dalam MongoDB
 "artist":"Morgan Wallen"}
 ```
 
+## 💻Web Scraping Documentation
+Untuk dokumentasi lebih lengkap terkait web scraping, bisa dilihat [di sini](https://rpubs.com/sofiaoctaviana/1055394)
+
 ## :woman_technologist: Pengembang
 Sofia Octaviana G1501221036
 
